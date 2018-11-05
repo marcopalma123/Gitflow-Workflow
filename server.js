@@ -4,6 +4,7 @@ const express = require('express');
 const lodash = require('lodash');
 const bodyParser = require('body-parser');
 
+
 const app = express();
 
 // support parsing of application/json type post data
@@ -11,12 +12,12 @@ app.use(bodyParser.json());
 
 const port = 3069;
 
-// app.get("/", (req, res) => {
+app.get("/", (req, res) => {
 
-//     console.log("get in / route");
+    console.log("get in / route");
 
-//     res.send("OK");
-// });
+    res.send("OK");
+});
 
 
 // app.listen(port, () => {
