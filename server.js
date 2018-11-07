@@ -37,6 +37,10 @@ function sum(a, b) {
   }
 
 
+var c = sum(10, 10);
+
+console.log(c);
+
 app.use(sum);
 
 module.exports = sum;
